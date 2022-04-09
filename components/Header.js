@@ -41,10 +41,10 @@ const Header = () => {
                 {/*Navbar*/}
                 <div className={"flex items-center space-x-4"}>
                     <HomeIcon className={"navLink h-6"} onClick={() => router.push("/")} />
-                    <MenuIcon className={"navLink block md:hidden h-6"} />
+                    {/*<MenuIcon className={"navLink block md:hidden h-6"} />*/}
                     {session ? (
                         <>
-                            <PlusCircleIcon className={"navLink"} onClick={() => setOpen(!open)} />
+                            <PlusCircleIcon className={"navLink block h-6 md:h-5"} onClick={() => setOpen(!open)} />
                             <UserGroupIcon className={"navLink"} />
                             <HeartIcon className={"navLink"} />
 
